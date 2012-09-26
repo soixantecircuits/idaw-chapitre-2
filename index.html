@@ -1,0 +1,342 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Misc 2012 - Une introduction au développement d'application Web</title>
+
+		<meta name="description" content="Un cours simple pour apprendre rapidement à développer des applications Web">
+		<meta name="author" content="Soixante circuits">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Introduction au développement d'application Web</h1>
+					<h3>Une présentation HTML</h3>
+					<p>
+						<i><small>- <a href="http://soixantecircuits.fr">Gabriel Delattre</a> / <a href="http://twitter.com/gabrielstuff">@gabrielstuff</a></small></i>
+					</p>
+				</section>
+				<section><h2>I. L'informatique</h2>
+	<h3>1. Historique</h3>
+	<h3>2. Les systèmes d'exploitations</h3>
+	<h3>3. Internet - écosystème</h3>
+</section>
+
+<section><h2>II.Introduction au développement en ligne.</h2>
+	<h3>1. Architecture et fonctionnement de l'infrastructure des réseaux. </h3>
+	<h3>2. Client-Serveur, les fonctionnements classiques d'un environnement en ligne.</h3>
+	<h3>3. Les langages informatiques de bureau</h3>
+	<h3>4. Les langages du Web (php, mysql, python, ruby, javacript)</h3>
+	<h3>5. Les bases de données (mysql, nosql - l'essentiel)
+		les structures de données</h3>
+	<h3>6. Langage côté serveur/ Langage côté client</h3>
+</section>
+
+<section><h2>III. HTML</h2>
+	<h3>1. Qu'est-ce que le HTML</h3>
+	<h3>2. Une nouvelle ère, le HTML5</h3>
+</section>
+
+<section><h2>IV. CSS</h2>
+	<h3>1. Qu'est-ce que le CSS ?</h3>
+	<h3>2. Qu'est-ce que le CSS3 ?</h3>
+	<h3>3. Pourquoi il n'y aura pas de CSS4 ?</h3>
+</section>
+<section><h2>V. Javascript</h2>
+	<h3>1. Qu'est-ce que javascript</h3>
+	<h3>2. Utilité de javascript</h3>
+	<h3>3. Exemple simple de javascript</h3>
+</section>
+
+<section><h2>VI. Php</h2>
+	<h3>1. Qu'est-ce que php ?</h3>
+	<h3>2. Les autres méthodes pour créer une application.</h3>
+</section>
+
+<section><h2>VI. Les API</h2>
+	<h3>1. Qu'est-ce qu'une API</h3>
+	<h3>2. Projet de communication avec une API de votre choix</h3>
+</section>
+
+
+				<section>
+					<section>
+					<h2>Historique</h2>
+					<p>
+						Évolution du Web de 1995 à 2012. Une croissance incroyable et des usages très différents.
+					</p>
+					<aside class="notes">
+						Une note
+					</aside>
+					</section>
+					<section>
+						<h2>1995</h2>
+						<p>16 millions d’utilisateurs (0,4% de la population)<p>
+						<p>Usage : </p>
+							<ul>
+								<li>information</li>
+								<li>mail</li>
+							</ul>
+						<p> </p>
+						<p> </p>
+						<h3>Un usage presque uniquement unidirectionel</h3>
+					</section>
+					<section>
+						<h2>2012</h2>
+						<p>2.280 millions d’utilisateurs ( plus de 30% de la population)<p>
+						<p>Usage : </p>
+							<ul>
+								<li>mails (yahoo, hotmail, gmail)</li>
+								<li>moteurs de recherches (google, bing, yahoo, duckduckgo, etc.)</li>
+								<li>sites marchands (amazon, ebay, leboncoin, etc.)</li>
+								<li>sites de plans et données géographiques (bing, mappy, openStreetMap, etc.)</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Les années 2000</h2>
+						<p>Usage multicanal</p>
+						<p>Apparition des forums grands publiques</p>
+						<p>Accès simplifié au chatroom</p>
+						<p></p>
+						<h4>Les internautes ne communiquent plus seulement entre personnes physiques connues.</h4>
+						<h4>La communication temps réel est à la mode</h4>
+					</section>
+				</section>
+				
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Caramail</h2>
+						<h3>1997</h3>
+						<p>Moins de 200 000 utilisateurs</p>
+						<h3>1998</h3>	
+						<p>La barre des 500 000 utilisateurs est atteinte</p>
+						<h3>1999</h3>
+						<p>En deux ans Caramail réussit à récupérer 1.2 millions d'inscrits</p>
+					</section>
+					<section>
+						<h2>Caramail</h2>
+						<h3>2003</h3>
+						<p>28 millions de comptes</p>
+						<h3>2004</h3>	
+						<p>Au même moment Facebook fait son aparition.</p>
+						<p>Deux technologie oposée : </p>
+						<p><strong>Coldfusion</strong> et <strong>Java</strong> pour Caramail VS <strong>php</strong> pour Facebook</p>
+						<p>L'univers <strong>propriétaire</strong> contre celui du <strong>libre</strong></p>
+					</section>
+					<section>
+						<h2>Caramail</h2>
+						<h3>2004</h3>
+						<p>de 30 000 utilisateur à 3 000</p>
+						<h3>2009</h3>	
+						<p>Seulement 700 000 comptes encore actif.</p>
+						<p>Le site ferme</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Facebook</h2>
+						<p>Facebook sort en 2003 en beta et en 2004 en public avec accès réservé</p>
+						<p>En 8 ans, facebook atteint 955 millions d'utilisateurs</p>
+					</section>
+					<section>
+						<h2>Facebook</h2>
+						<h3>Les technologies</h3>
+						<p>Accent sur le libre et l'opensource : </p>
+						<ul>
+							<li>php</li>
+							<li>mysql</li>
+							<li>apache</li>
+							<li>html</li>
+							<li>css</li>
+							<li>javascript (jQuery, AJAX)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Facebook</h2>
+						<h3>L'API</h3>
+						<p>Accent sur l'accès à l'information : </p>
+						<ul>
+							<li>Documentée</li>
+							<li>Simple d'accès</li>
+						</ul>
+						<h3>9 mai 2008</h3>
+						<p>Lancement de <strong>Facebook Connect</strong></p>
+						<p>Simplification de la création de compte et augmentation des interactions entre les sites.</p>
+					</section>
+				</section>
+				<section>
+					<h2>Google</h2>
+					<p>
+						Moteur de recherche ultra rapide.
+					</p>
+					<h3>
+						Premier service : 1998
+					</h3>
+					<p>
+						Un seul ordinateur dans l'université de Stanford : 2x200MHz et 256Mo de RAM.
+						Système d'exploitation linux.
+					</p>
+					<h3>Langage utilisé :</h3>
+					<p>Python, C++, Java</p>
+				</section>
+
+				<section>
+					<h2>Exercice</h2>
+					<p>
+						Réalisez un document reprenant l'ensemble des sites suivant sur une période de 6 ans :
+					</p>
+					<ul>
+						<li>
+							google
+						</li>
+						<li>
+							yahoo
+						</li>
+						<li>
+							facebook
+						</li>
+						<li>
+							microsoft
+						</li>
+						<li>
+							lycos
+						</li>
+						<li>
+							apple
+						</li>
+						<li>
+							amazon
+						</li>
+						<li>
+							ubuntu
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Les OS</h2>
+					<h3>
+						Quelques système d'exploitation à connaitre :
+					</h3>
+					<p><i>Définition : Ensemble des logiciels permettant la gestion des resources d'une unité centrale.</i></p>
+					<ul>
+						<li>
+							Windows
+						</li>
+						<li>
+							Debian (Unix)
+						</li>
+						<li>
+							Mountain Lion (OsX)
+						</li>
+						<li>
+							Android
+						</li>
+						<li>
+							iOS
+						</li>
+					</ul>
+					<p>D'autres OS existent mais ne seront pas abordé dans ce cours.</p>
+				</section>
+
+				<section>
+					<section>
+					<h2>Ecosystème</h2>
+					<p>
+						Les sites reposent les uns sur les autres.
+					</p>
+					<p>
+						Les images sont stockées sur des serveurs spécifiquent.
+						Les mails sont reçus et envoyés par des serveurs différents.
+						Les scripts (tel javascript) sont rarrement présent sur le serveur de l'un des deux précédent.
+					</p>
+					</section>
+					<section>
+						<h2>Ecosystème</h2>
+						<p>Le web comme service : </p>
+						<p>De l'aide à la personne au développement d'application jusqu'au premier garagiste.</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>La fin</h1>
+					<h2>pour aujourd'hui</h2>
+					<h3>BY Gabriel Delattre / soixantecircuits.fr</h3>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
